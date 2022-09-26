@@ -12,11 +12,13 @@ from random import randint
 num_list = []
 tpl = []
 for k in range(25):
-        i = randint(1, 10)
-        j = i ** 2
-        tpl = [i, j]
-        tpl = tuple(tpl)
-        num_list.append(tpl)
+    i = randint(1, 10)
+    j = i ** 2
+    tpl = [i, j]
+    tpl = tuple(tpl)
+    num_list.append(tpl)
 num_list.append(tpl)
 
 print(num_list)
+a = [(i, i **2) for i in range(1, 11) ]
+print(a)
