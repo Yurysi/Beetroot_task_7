@@ -15,6 +15,7 @@ for k in range(25):
         i = randint(1, 10)
         j = i ** 2
         tpl = [i, j]
+        tpl = tuple(tpl)
         num_list.append(tpl)
 num_list.append(tpl)
 
