@@ -5,13 +5,6 @@
      dict containing all unique words as keys and the number of occurrences
      as values. """
 
-any_sentence = input("Enter your sentence: ")
-dictionary = {}
-a = 0
-word = ''
-for sentece in any_sentence:
-    if sentece != ' ':
-        word = ''.join(any_sentence[:id(any_sentence.find(' '))+1])
-
-dictionary[word] = len(word)
+any_sentence = input("Enter your sentence: ").split()
+dictionary = {item: value for value, item in enumerate(any_sentence, start=1)}
 print(dictionary)
